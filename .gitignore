@@ -1,0 +1,16 @@
+.alpackages/
+.altestrunner/
+.snapshots/
+
+*.app
+
+.vscode/.alcache/
+.vscode/Tables/
+.vscode/rad.json
+.vscode/*.log
+
+*.tmp
+*.bak
+
+.DS_Store
+Thumbs.db
