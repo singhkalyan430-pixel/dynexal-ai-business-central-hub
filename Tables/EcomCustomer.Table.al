@@ -63,6 +63,26 @@ table 50200 "Ecom Customer"
             Caption = 'Status';
             DataClassification = CustomerContent;
         }
+        field(10; "Source System"; Text[50])
+        {
+            Caption = 'Source System';
+            DataClassification = CustomerContent;
+        }
+        field(11; "Sync Status"; Enum "Ecom Sync Status")
+        {
+            Caption = 'Sync Status';
+            DataClassification = CustomerContent;
+        }
+        field(12; "Last Sync Date/Time"; DateTime)
+        {
+            Caption = 'Last Sync Date/Time';
+            DataClassification = CustomerContent;
+        }
+        field(13; "Sync Error Message"; Text[250])
+        {
+            Caption = 'Sync Error Message';
+            DataClassification = CustomerContent;
+        }
     }
 
     keys
@@ -84,6 +104,7 @@ table 50200 "Ecom Customer"
 
         if Name = '' then
             Error('Customer Name must not be empty.');
+        "Sync Status" := "Sync Status"::Pending;
 
         CheckExternalCustomerID();
     end;

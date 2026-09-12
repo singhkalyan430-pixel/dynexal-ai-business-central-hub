@@ -48,6 +48,22 @@ page 50200 "Ecom Customers"
                 {
                     ApplicationArea = All;
                 }
+                field("Source System"; Rec."Source System")
+                {
+                    ApplicationArea = All;
+                }
+                field("Sync Status"; Rec."Sync Status")
+                {
+                    ApplicationArea = All;
+                }
+                field("Last Sync Date/Time"; Rec."Last Sync Date/Time")
+                {
+                    ApplicationArea = All;
+                }
+                field("Sync Error Message"; Rec."Sync Error Message")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
